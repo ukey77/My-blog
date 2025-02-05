@@ -1,0 +1,153 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "title": "Matrix Calculator",
+            "colorCode": "#F8F4FD",
+            "type": [
+                "Personal Project",
+                "PC"
+            ],
+            "period": "2024-07-19 ~ 2024-07-25",
+            "description": "이차원 배열과 객체를 활용하여 행렬의 덧셈, 뺄셈, 곱셈 연산을 구현한 행렬 계산기 프로젝트입니다.",
+            "siteLink": "",
+            "pdfLink": "",
+            "imgPath": "portfolio/MatrixCalculator.jpg",
+            "techStack": [
+                "HTML5",
+                "CSS3",
+                "JAVASCRIPT",
+                "VIM"
+            ]
+        },
+        {
+            "id": 2,
+            "title": "Graphing Calculator",
+            "colorCode": "#F4F5F6",
+            "period": "2024-08-19 ~ 2024-08-26",
+            "type": [
+                "Personal Project",
+                "PC"
+            ],
+            "description": "Class 문법으로 객체 복사를 구현하고, 일차, 이차, 삼차 및 원 방정식을 활용해 그래프를 그릴 수 있도록 구현했습니다.",
+            "siteLink": "",
+            "pdfLink": "",
+            "imgPath": "portfolio/GraphingCalculator.jpg",
+            "techStack": [
+                "HTML5",
+                "CSS3",
+                "JAVASCRIPT"
+            ]
+        },
+        {
+            "id": 3,
+            "title": "Cinema Kiosk",
+            "colorCode": "#1a191fc9",
+            "period": "2024-10-01 ~ 2024-10-31",
+            "type": [
+                "Team Project",
+                "PC"
+            ],
+            "description": "EJS와 Node.js를 활용해 영화관 키오스크를 구현하고, 페르소나를 적용하여 사용자 경험을 향상시켰습니다.",
+            "siteLink": "",
+            "pdfLink": "",
+            "imgPath": "portfolio/CinemaKiosk.jpg",
+            "techStack": [
+                "HTML5",
+                "CSS3",
+                "JAVASCRIPT",
+                "EJS",
+                "NODE.JS",
+                "EXPRESS",
+                "MYSQL"
+            ]
+        },
+        {
+            "id": 4,
+            "title": "Tower Of Hanoi",
+            "colorCode": "#E7C98A",
+            "period": "2024-10-23 ~ 2024-10-27",
+            "type": [
+                "Personal Project",
+                "PC",
+                "Mobile"
+            ],
+            "description": "재귀 알고리즘을 활용하여 하노이의 탑을 구현했으며, 원판의 이동 경로를 시각적으로 표시하여 직관적으로 확인할 수 있도록 제작했습니다",
+            "siteLink": "",
+            "pdfLink": "",
+            "imgPath": "portfolio/TowerOfHanoi.jpg",
+            "techStack": [
+                "HTML5",
+                "CSS3",
+                "JAVASCRIPT"
+            ]
+        },
+        {
+            "id": 5,
+            "title": "Music Player",
+            "colorCode": "#FBF5F3",
+            "period": "2024-08-01 ~ 2024-08-08, 2024-11-14 ~ 2024-11-17(추가 수정)",
+            "type": [
+                "Personal Project",
+                "PC",
+                "Mobile"
+            ],
+            "description": "SQL을 활용해 뮤직플레이어를 제작하고, 좋아요 기능을 추가하여 좋아요 리스트를 별도로 확인할 수 있도록 구현했습니다.",
+            "siteLink": "",
+            "pdfLink": "",
+            "imgPath": "portfolio/MusicPlayer.jpg",
+            "techStack": [
+                "HTML5",
+                "CSS3",
+                "JAVASCRIPT",
+                "NODE.JS",
+                "EXPRESS",
+                "MYSQL"
+            ]
+        },
+        {
+            "id": 6,
+            "title": "강원도-락도락",
+            "colorCode": "#F8FDF9",
+            "period": "2024-10-24 ~ 2024-11-19",
+            "type": [
+                "Team Project",
+                "PC",
+                "Mobile"
+            ],
+            "description": "강원도 지역을 입력하면 OpenAI를 통해 여행지를 추천받고, 해당 여행지의 소개글과 홍보 영상을 확인할 수 있도록 구현한 여행 추천 사이트입니다.",
+            "siteLink": "",
+            "pdfLink": "",
+            "imgPath": "portfolio/DoRock.jpg",
+            "techStack": [
+                "REACT",
+                "CSS3",
+                "PYTHON",
+                "DJANGO",
+                "MYSQL"
+            ]
+        },
+        {
+            "id": 7,
+            "title": "팀플",
+            "colorCode": "#ddd",
+            "period": "2025-02-00~ 2025-03-00",
+            "type": [
+                "Team Project",
+                "PC",
+                "Mobile"
+            ],
+            "description": "~~~",
+            "siteLink": "",
+            "pdfLink": "",
+            "imgPath": "",
+            "techStack": [
+                "REACT",
+                "SCSS",
+                "MYSQL",
+                "JAVA",
+                "SPRING"
+            ]
+        }
+    ]
+}

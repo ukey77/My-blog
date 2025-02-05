@@ -1,0 +1,331 @@
+@use 'variables' as *;
+
+@mixin box-item{
+    background-size: cover;
+    cursor: pointer;
+}
+
+// == height ==
+$Home-height: 100vh;
+$Explain-height: 17vh;
+$Contents-height: 70vh;
+$scroll-height: 13vh;
+
+// == color ==
+$scroll-color: #535353;
+
+// == font ==
+$explain-font-size: 5rem;
+$explain-font-family: 'Montserrat', sans-serif;
+$background-font-family: "Pretendard", sans-serif;
+// ===============================================
+
+/* setting */
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+body {
+  font-family: $background-font-family;
+  font-weight: 400; /* 기본 굵기 */
+  color: #333;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+    box-sizing: border-box;
+    color: #222222;
+    font-family: "Pretendard", sans-serif;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* start */
+
+.home-wrapper{
+    position: relative;
+    width: 100%;
+    height: $Home-height;
+    background: #fff;
+    z-index: -10;
+}
+
+/* ===Contents=== */
+.main-contents-area{
+    position: relative;
+    width: 100%;
+    // border: 1px solid red;
+    height: $Contents-height;
+}
+
+.gradient-pattern{
+    position: absolute;
+    background: url("../images/gradient.png") no-repeat;
+    background-size: 120%;
+    width: 30%;
+    height: 75vh;
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    -o-transform: translate(-50%);
+    z-index: -1;
+}
+
+.gradient-item01{
+    left: 15%;
+    top: 30%;
+    transform: translate(-50%);
+    opacity: 0.8;
+}
+
+.gradient-item02{
+    left: 50%;
+    top: -20%;
+    transform: translate(-50%);
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    opacity: 0.9;
+}
+
+.content-items {
+    padding: 9rem 2rem 2rem;
+}
+
+.content-items>div {
+    display: flex;
+}
+
+.box-item {
+    width: calc(100vw / 7);
+    height: calc(100vw / 8);
+    margin: .05rem;
+    /*border: 1px solid red;
+    */border-radius: .4rem;
+    filter: grayscale(90%);
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -webkit-filter: grayscale(90%);
+}
+
+.box-item:hover {
+    filter: grayscale(0%);
+    transform: scale(1.05);
+    z-index: 1000;
+    -webkit-filter: grayscale(0%);
+}
+
+.box4, .box7{
+    filter: grayscale(35%);
+    -webkit-filter: grayscale(35%);
+}
+
+.box2, .box10{
+    filter: grayscale(50%);
+    -webkit-filter: grayscale(50%);
+}
+.box1 {
+    background: url(../images/main/main_item_14.jpg) no-repeat 50% 50%;
+    @include box-item();
+}
+
+.box2 {
+    background: url(../images/main/main_item_16.jpg) no-repeat 50% 50%;
+    @include box-item();
+}
+
+.box4 {
+    background: url(../images/main/main_item_09.jpg) no-repeat 50% 50%;
+    @include box-item();
+}
+
+.box6 {
+    background: url(../images/main/main_item_03.jpg) no-repeat 50% 50%;
+    @include box-item();
+}
+
+.box7 {
+    background: url(../images/main/main_item_12.jpg) no-repeat 50% 100%;
+    @include box-item();
+}
+
+.box8 {
+    background: url(../images/main/main_item_08.jpg) no-repeat 50% 50%;
+    @include box-item();
+
+}
+
+.box10 {
+    background: url(../images/main/main_item_11.jpg) no-repeat 50% 50%;
+    @include box-item();
+}
+
+.box12 {
+    background: url(../images/main/main_item_05.jpg) no-repeat 50% 50%;
+    @include box-item();
+
+} 
+
+.box14{
+    position: relative;
+    cursor: pointer;
+    background: $point-color;
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+}
+
+/* ===Clock=== */
+.canvas{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: calc(100vw / 8.5);
+    height: calc(100vw / 8.5);
+    border-radius: 50%;
+    overflow: hidden;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+}
+
+/* ===Explain=== */
+.explain-container {
+    width: 100%;
+    height: $Explain-height;
+    // background-color: #f4f4f4;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // border: 1px solid red;
+
+}
+
+.explain-content .explain-txt {
+    font-family: $explain-font-family;
+    font-size: $explain-font-size; 
+    font-weight: 600;
+    letter-spacing: .2rem;
+}
+
+.explain-content span{
+    display: inline-block;
+    padding: 0 .8rem;
+}
+
+.jeneral-color{
+    color: #3f3f3f;
+}
+
+.point-color{
+    color: $point-color;
+    margin: 0 .3rem;
+}
+
+.explain-sub{
+    width: 40%;
+    display: flex;
+    align-items: center;
+}
+
+.horizontal-line{
+    width: 35%;
+    height: .25rem;
+    background: $scroll-color;
+    margin: 0 2.2rem;
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+    opacity: .6;
+}
+.sub-text{
+    font-family: $explain-font-family;
+    font-size: $explain-font-size; 
+    font-weight: 600;
+}
+
+// == scroll-area ==
+.scroll-area{
+    width: 100%;
+    // border: 1px solid red;
+    height: $scroll-height;
+}
+.scroll-txt{
+    text-align: center;
+    font-size: 1.2rem;
+    letter-spacing: .2rem;
+    color: $scroll-color;
+}
+.scroll-icon {
+    position: relative;
+    margin: 1rem auto 0;
+    width: 1.8rem;
+    height: 2.9rem;
+    animation-name: scrollmouse;
+    animation-duration: 2.4s;
+    animation-timing-function: cubic-bezier(0,0,0.725,1);
+    animation-iteration-count: infinite;
+    transform-origin: 50%;
+    border: 1px solid $scroll-color;
+    border-radius: 2rem;
+}
+
+.scroll-dot {
+    width: 0.3rem;
+    height: 0.45rem;
+    top: 0.5rem;
+    left: 50%;
+    background-color: $scroll-color;
+    border-radius: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    animation: dotMove 2.4s cubic-bezier(0.25, 0.1, 0.25, 1) infinite;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+@keyframes scrollmouse {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(10px);
+}
+  }
+  
+  @keyframes dotMove {
+    0% {
+      opacity: 1;
+      transform: translateX(-50%) translateY(0);
+    }
+    50% {
+      opacity: 0;
+      transform: translateX(-50%) translateY(1.5rem); /* 점이 아래로 이동 */
+    }
+    100% {
+      opacity: 0;
+      transform: translateX(-50%) translateY(0); /* 위로 다시 나타남 */
+    }
+  }
