@@ -7,7 +7,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: .2rem solid #ebebeb;
+    // border-bottom: .2rem solid #ebebeb;
+    box-shadow: 0 .15rem 1rem #e4e4e4;
     background: #fff;
     z-index: 100;
     height: $nav-height;

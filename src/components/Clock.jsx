@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 
 const Clock = () => {
     const [time, setTime] = useState(new Date());
-
+    const canvas = useRef(null);
     useEffect(() => {
         const timer = setInterval(() => {
             setTime(new Date());
@@ -14,9 +14,8 @@ const Clock = () => {
         class ClockCalc {
             constructor(id) {
                 this.id = id;
-                this.canvas = document.getElementById("canvas");
-                if (!this.canvas) throw new Error("Canvas not found!");
-                this.pen = document.getElementById("canvas").getContext("2d");
+                this.canvas = canvas.current;
+                this.pen = this.canvas.getContext("2d");
             }
             drawCircle() {
                 // 시간
@@ -89,7 +88,7 @@ const Clock = () => {
         clock.run(currentTime);
     }, [time]);
     return (
-        <canvas className="canvas" id="canvas" width={300} height={300}></canvas>
+        <canvas ref={canvas} className="canvas" width={300} height={300}></canvas>
     )
 }
 

@@ -6,7 +6,7 @@ import projectData from "../Data/projectData.json";
 
 // == recoil ==  :: State(값변경) , Value(값 읽기)
 import { useRecoilState, useRecoilValue } from "recoil";
-import { sortOrderState } from "../../src/recoil/atoms.js";
+import { sortOrderState } from "../recoil/atoms.js";
 
 const Portfolio = () => {
     const [jsxData, setJsxData] = useState([]); // jsxData

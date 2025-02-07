@@ -2,10 +2,10 @@ import React from "react";
 import './App.css';
 
 // == pages ==
-import Navigation from "./components/Navigation.js";
-import Home from './components/Home.js';
-import AbouteMe from "./components/AbouteMe.js";
-import Portfolio from './components/Portfolio.js';
+import Navigation from "./components/Navigation";
+import Home from './components/Home';
+import AbouteMe from "./components/AbouteMe";
+import Portfolio from './components/Portfolio';
 import Skills from './components/Skills';
 
 const App = () => {

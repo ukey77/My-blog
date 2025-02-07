@@ -58,7 +58,7 @@ const Explain = () => {
             </article>
             <div className="explain-sub">
                 <div className="horizontal-line"></div>
-                <p className="sub-text jeneral-color">VISIONARY</p>
+                <p className="sub-text jeneral-color">PORTFOLIO</p>
             </div>
         </section>
         <Scroll/>
