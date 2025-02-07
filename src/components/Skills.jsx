@@ -25,10 +25,12 @@ const Skills = () => {
 
     return(
         <section className="Skills-wrapper">
-            {/* 회전하는 프리즘 원 */}
-
             <article className="skills-header"></article>
-            <canvas ref={skillsCanvas} id="skillsCanvas" className="skills-canvas"></canvas>
+            <section className="skills-canvas-area">
+                <canvas className="skills-canvas"></canvas>
+                <canvas className="skills-canvas"></canvas>
+            </section>
+
         </section>
     )
 }
