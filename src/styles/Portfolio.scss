@@ -160,6 +160,7 @@ $point-text-color: #321697;
 }
 
 .portfolio-img-area {
+    position: relative;
     width: 40%;
     height: 100%;
     border-radius: 1rem;
@@ -170,6 +171,7 @@ $point-text-color: #321697;
 }
 
 .portfolio-img {
+    border-radius: 1rem;
     width: 100%;
     height: 100%;
     background-size: contain;
@@ -177,8 +179,69 @@ $point-text-color: #321697;
     background-repeat: no-repeat;
 }
 
-/* ==sort-form== */
+.portfolio-img-hover{
+    position: absolute;
+    opacity: 0;
+    border-radius: 1rem;
+    display: flex;
+    left: 0%;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+}
 
+$logo-area-size: 6rem;
+$logo-size: 5rem;
+.sub-logo{
+    position: absolute;
+    background: #fff;
+    border-radius: 50%;
+    width: $logo-area-size;
+    height: $logo-area-size;
+    background-size: $logo-size;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+$top-size: 1.5rem;
+.gitHub-logo{
+    right: 1.5rem;
+    bottom: $top-size;
+}
+.notion-logo{
+    right: 8.5rem;
+    bottom: $top-size;
+}
+
+.portfolio-img-hover:hover{
+    transition: 0.3s;
+    background-color: #0000006d;
+    opacity: 1; 
+    cursor: pointer;
+}
+.gitHub-logo:hover, .notion-logo:hover{
+    background: #d1d1d1;
+    width: $logo-area-size;
+    height: $logo-area-size;
+    background-size: $logo-size;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.link_icon{
+    $size: 3.5rem;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    width: $size;
+    height: $size;
+    background-size: contain;
+}
+
+/* ==sort-form== */
 .sort-form {
     display: flex;
 }

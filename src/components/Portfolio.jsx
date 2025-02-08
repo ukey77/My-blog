@@ -31,12 +31,11 @@ const Portfolio = () => {
         const jsxTemplate = data.map((item, i) => {
             const idValue = Number(item["id"]) - 1; //Id값
             const sortIdx = Math.abs(-sortType + idValue); //sort에 따른 변화
-            const areaStyle = {
-                backgroundColor: `${data[sortIdx]["colorCode"]}`
-            };
-            const style = {
-                backgroundImage: `url(images/${data[sortIdx]["imgPath"]})`
-            };
+            const areaStyle = {backgroundColor: `${data[sortIdx]["colorCode"]}`};
+            const style = {backgroundImage: `url(images/${data[sortIdx]["imgPath"]})`};
+            const githubStyle = {backgroundImage: `url(images/logo/github_logo.png)`};
+            const notionStyle = {backgroundImage: `url(images/logo/notion_logo.png)`};
+            const linkStyle = {backgroundImage: `url(images/icon/link_icon.png)`};
             return (
                 <article key={`jsx${i}`} className="portfolio-item">
                     <section className="portfolio-description">
@@ -67,6 +66,15 @@ const Portfolio = () => {
                     </section>
                     <div style={areaStyle} className={`portfolio-img-area`}>
                         <div style={style} className={`portfolio-img`}></div>
+                        <div onClick={()=>{window.open(data[sortIdx]["siteLink"], "_blank");}} className='portfolio-img-hover'>
+                            <div onClick={(e)=>{
+                                e.stopPropagation();
+                                window.open(data[sortIdx]["notionLink"], "_blank");}} style={notionStyle} className="notion-logo sub-logo"></div>
+                            <div onClick={(e)=>{
+                                e.stopPropagation();
+                                window.open(data[sortIdx]["githubLink"], "_blank");}} style={githubStyle} className="gitHub-logo sub-logo"></div>
+                            <div style={linkStyle} className="link_icon"></div>
+                        </div>
                     </div>
                 </article>
             )
