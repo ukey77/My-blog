@@ -30,7 +30,6 @@ body {
   color: #333;
 }
 
-
 * {
     margin: 0;
     padding: 0;
@@ -272,7 +271,7 @@ a {
 }
 .scroll-txt{
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     letter-spacing: .2rem;
     color: $scroll-color;
 }
@@ -329,3 +328,16 @@ a {
       transform: translateX(-50%) translateY(0); /* 위로 다시 나타남 */
     }
   }
+
+// updatetxt 추가 (0208)
+.update-area{
+    position: absolute;
+    left: 2rem;
+    bottom: 2rem;
+
+    .update-date{
+        font-size: 1.6rem;
+        color: #fff;
+        text-shadow: .1rem .1rem .3rem #2f2f2f;
+    }
+}

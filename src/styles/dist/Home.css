@@ -253,7 +253,7 @@ a {
 
 .scroll-txt {
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   letter-spacing: 0.2rem;
   color: #535353;
 }
@@ -311,4 +311,14 @@ a {
     transform: translateX(-50%) translateY(0);
     /* 위로 다시 나타남 */
   }
+}
+.update-area {
+  position: absolute;
+  left: 2rem;
+  bottom: 2rem;
+}
+.update-area .update-date {
+  font-size: 1.6rem;
+  color: #fff;
+  text-shadow: 0.1rem 0.1rem 0.3rem #2f2f2f;
 }

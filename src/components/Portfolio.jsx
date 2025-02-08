@@ -66,13 +66,14 @@ const Portfolio = () => {
                     </section>
                     <div style={areaStyle} className={`portfolio-img-area`}>
                         <div style={style} className={`portfolio-img`}></div>
-                        <div onClick={()=>{window.open(data[sortIdx]["siteLink"], "_blank");}} className='portfolio-img-hover'>
-                            <div onClick={(e)=>{
+                        <div className='portfolio-img-hover' onClick={()=>{window.open(data[sortIdx]["siteLink"], "_blank");}}>
+                            {/* ==logo== */}
+                            <div className="notion-logo sub-logo" onClick={(e)=>{
                                 e.stopPropagation();
-                                window.open(data[sortIdx]["notionLink"], "_blank");}} style={notionStyle} className="notion-logo sub-logo"></div>
-                            <div onClick={(e)=>{
+                                window.open(data[sortIdx]["notionLink"], "_blank");}} style={notionStyle}></div>
+                            <div className="gitHub-logo sub-logo" onClick={(e)=>{
                                 e.stopPropagation();
-                                window.open(data[sortIdx]["githubLink"], "_blank");}} style={githubStyle} className="gitHub-logo sub-logo"></div>
+                                window.open(data[sortIdx]["githubLink"], "_blank");}} style={githubStyle}></div>
                             <div style={linkStyle} className="link_icon"></div>
                         </div>
                     </div>

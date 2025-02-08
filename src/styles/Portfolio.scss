@@ -190,11 +190,11 @@ $point-text-color: #321697;
     height: 100%;
 }
 
-$logo-area-size: 6rem;
-$logo-size: 5rem;
+$logo-area-size: 5rem;
+$logo-size: 4rem;
 .sub-logo{
     position: absolute;
-    background: #fff;
+    background: #ffffffd4;
     border-radius: 50%;
     width: $logo-area-size;
     height: $logo-area-size;
@@ -209,8 +209,9 @@ $top-size: 1.5rem;
     right: 1.5rem;
     bottom: $top-size;
 }
+
 .notion-logo{
-    right: 8.5rem;
+    right: 7.5rem;
     bottom: $top-size;
 }
 
@@ -220,15 +221,16 @@ $top-size: 1.5rem;
     opacity: 1; 
     cursor: pointer;
 }
+
 .gitHub-logo:hover, .notion-logo:hover{
-    background: #d1d1d1;
+    background: #ffffffab;
     width: $logo-area-size;
     height: $logo-area-size;
     background-size: $logo-size;
     background-repeat: no-repeat;
     background-position: center;
-    cursor: pointer;
     transition: 0.3s;
+    cursor: pointer;
 }
 
 .link_icon{

@@ -61,6 +61,9 @@ const Explain = () => {
                 <p className="sub-text jeneral-color">PORTFOLIO</p>
             </div>
         </section>
+        <article className="update-area">
+            <p className='update-date'>UPDATE 25.02.08</p>
+        </article>
         <Scroll/>
         </>
     );
