@@ -66,6 +66,7 @@ const Portfolio = () => {
                     </section>
                     <div style={areaStyle} className={`portfolio-img-area`}>
                         <div style={style} className={`portfolio-img`}></div>
+
                         <div className='portfolio-img-hover' onClick={()=>{window.open(data[sortIdx]["siteLink"], "_blank");}}>
                             {/* ==logo== */}
                             <div className="notion-logo sub-logo" onClick={(e)=>{
@@ -86,14 +87,16 @@ const Portfolio = () => {
 
     return (
         <div className="portfolio-wrapper">
-            <section className="portfolio-header">
-                <h2 className="section-title">PORTFOLIO <span className="portfolio-length">{portfolioLength.current}</span></h2>
-                <article>
-                    <SortOrder />
-                </article>
-            </section>
-            <section ref={portfolioContents} className="portfolio-contents">
-                {jsxData}
+            <section className="portfolio-layout">
+                <section className="portfolio-header">
+                    <h2 className="section-title">PORTFOLIO <span className="portfolio-length">{portfolioLength.current}</span></h2>
+                    <article>
+                        <SortOrder />
+                    </article>
+                </section>
+                <section ref={portfolioContents} className="portfolio-contents">
+                    {jsxData}
+                </section>
             </section>
         </div>
     );

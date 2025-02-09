@@ -1,13 +1,13 @@
 @use 'variables' as *;
 @use 'mixins';
+$border-radius: 1rem;
 
-$background-color: #FFF7F5;
-$header-height: 0rem;
-$image-border-radius: 25rem;
+$background-color: #F5F5F5; // 부드러운 회색톤 배경
+$box-bg-color: #ffffff; // 박스 배경 색상
+$primary-text-color: #333; // 기본 글씨 색상
+$accent-color: #4F2FC1; // 따뜻한 레드 브라운 (세련된 포인트)
+$shadow: 0 4px 12px rgba(0, 0, 0, 0.1); // 부드러운 그림자 효과
 
-@mixin border(){
-    // border: 1px solid rgb(255, 0, 0);
-}
 
 @mixin flex(){
     display: flex;
@@ -15,80 +15,78 @@ $image-border-radius: 25rem;
     justify-content: center;
 }
 
-%btn{
-    margin: 1rem;
-    padding: 1rem;
-    border: none;
-}
-
-// ================================================
-.aboutMe-wrapper{
+.aboutMe-wrapper {
     position: relative;
     width: 100%;
-    height: $wrapper-height;
+    height: 85vh;
     background: $background-color;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // border: 1px solid red;
 
-    .aboutMe-header{
-        width: 100%;
-        height: $header-height;
-        @include border();
-    }
-
-    .aboutMe-title{
-        position: absolute;
-        font-size: 15rem;
-        bottom: -9%;
-        right: 2%;
-        opacity: 0.2;
-}
-
-    .aboutMe-content{
-        width: 100%;
-        height: calc(100% - $header-height);
-         @include mixins.center;
-    }
-
-    .aboutMe-image-area, .aboutMe-text-area{
-        width: 45%;
-        height: 100%;
-        @include border();
-    }
-
-    .aboutMe-text-area{
-        width: 55%;
-    }
- 
-    .aboutMe-image{
-        width: 55%;
+    .aboutMe-layout {
+        width: 65%;
         height: 80%;
-        background: #ddd;
-        //@includemixins.center:;
-        margin: 0 auto;
-        border-radius: $image-border-radius $image-border-radius 0 0;
-        margin-top: 8%;
-}
-
-    .aboutMe-text-area{
         display: flex;
-        flex-direction: column;
-        justify-content: center;
+        justify-content: space-between;
+        gap: 2rem;
 
-    }
-    .aboutMe-text-area > h2{
-        font-size: 4rem;
-        width: 60%;
-        margin: 0 auto;
-    }
-    
-    .aboutMe-text-area > p{
-        font-size: 2rem;
-        width: 60%;
-        margin: 0 auto;
-        margin-top: 5rem;
-    }
+        .aboutMe-main-info, .aboutMe-sub-info {
+            background: $box-bg-color;
+            border-radius: $border-radius;
+            box-shadow: $shadow;
+            padding: 2rem;
+            color: $primary-text-color;
+        }
 
-    // button{
-    //     @extend %btn;
-    // }
+        .aboutMe-main-info {
+            flex: 1;
+        }
+
+        .aboutMe-sub-info {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            // gap: 1.5rem;
+
+            .sub-item {
+                background: lighten($box-bg-color, 5%);
+                border-radius: $border-radius;
+                box-shadow: $shadow;
+                padding: 1.5rem;
+                
+                h2 {
+                    font-size: 1.7rem;
+                    font-weight: bold;
+                    color: $accent-color;
+                    margin-bottom: 1rem;
+                    letter-spacing: 0.05rem;
+                }
+
+                ul {
+                    list-style: none;
+                    padding: 0;
+
+                    li {
+                        font-size: 1.3rem;
+                        margin-bottom: 0.5rem;
+                        position: relative;
+                        padding-left: 1rem;
+
+                        &::before {
+                            content: "•";
+                            color: $accent-color;
+                            font-size: 1.2rem;
+                            position: absolute;
+                            left: 0;
+                            top: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

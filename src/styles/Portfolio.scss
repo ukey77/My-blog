@@ -9,16 +9,20 @@ $point-text-color: #321697;
     // height: $wrapper-height;
 }
 
+.portfolio-layout{
+    width: 90vw;
+    margin: 0 auto;
+}
+
 .portfolio-header {
     padding: 1rem 11.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
 }
 
 .section-title {
-    width: 85%;
+    width: 83.5%;
     font-size: 4rem;
 }
 
@@ -49,7 +53,6 @@ $point-text-color: #321697;
     display: flex;
     padding: 2rem 1rem;
     background-color: #fdfdfd;
-    /* 배경색 추가 */
 }
 
 .portfolio-description {
@@ -168,6 +171,7 @@ $point-text-color: #321697;
     background-size: 10000%;
     background-repeat: no-repeat;
     background-position: 10% 10%;
+    margin-right: .8rem;
 }
 
 .portfolio-img {
@@ -290,3 +294,4 @@ $top-size: 1.5rem;
     color: white;
     color: $point-color;
 }
+

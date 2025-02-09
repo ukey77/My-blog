@@ -1,7 +1,6 @@
 @use 'variables' as *;
 
 $header-height: 20vh;
-$canvas-height: calc($wrapper-height - $header-height - 10vh);
 
 // ==========================
 $font-white: #fff;
@@ -28,7 +27,7 @@ $line-color: #ffffff4d;
   // height: $wrapper-height;
 
   .skills-layout-area{
-    width: 75vw;
+    width: 76vw;
     margin: 0 auto;
 
     .skills-header{
