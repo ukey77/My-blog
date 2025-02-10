@@ -129,16 +129,18 @@ a {
     z-index: 1000;
     -webkit-filter: grayscale(0%);
 }
+.box8{
+    filter: grayscale(5%);
+}
 
 .box4, .box7{
     filter: grayscale(35%);
-    -webkit-filter: grayscale(35%);
 }
 
 .box2, .box10{
     filter: grayscale(50%);
-    -webkit-filter: grayscale(50%);
 }
+
 .box1 {
     background: url(../images/main/main_item_14.jpg) no-repeat 50% 50%;
     @include box-item();
@@ -186,7 +188,6 @@ a {
     cursor: pointer;
     background: $point-color;
     filter: grayscale(0%);
-    -webkit-filter: grayscale(0%);
 }
 
 /* ===Clock=== */

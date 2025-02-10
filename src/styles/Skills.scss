@@ -12,6 +12,8 @@ $line-max-length: 25rem;
 $line-min-length: .1rem;
 $line-color: #ffffff4d;
 // ==========================
+$background-color: #2D295A;
+
 
 @mixin position-center(){
   position: absolute;
@@ -21,8 +23,8 @@ $line-color: #ffffff4d;
 }
 .skills-wrapper {
   padding: 10vh 0 9vh 0;
-  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
-    // background-color: #0d1b2a;
+  // background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  background-color: $background-color;
   color: $font-white;
   // height: $wrapper-height;
 

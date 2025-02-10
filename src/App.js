@@ -16,7 +16,7 @@ const App = () => {
         <Home />
       </div>
         <div className="all-contents-area">
-          <AbouteMe/>
+          {/* <AbouteMe/> */}
           <Portfolio />
           <Skills/>
         </div>

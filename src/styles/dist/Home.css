@@ -108,14 +108,16 @@ a {
   -webkit-filter: grayscale(0%);
 }
 
+.box8 {
+  filter: grayscale(5%);
+}
+
 .box4, .box7 {
   filter: grayscale(35%);
-  -webkit-filter: grayscale(35%);
 }
 
 .box2, .box10 {
   filter: grayscale(50%);
-  -webkit-filter: grayscale(50%);
 }
 
 .box1 {
@@ -171,7 +173,6 @@ a {
   cursor: pointer;
   background: #4F2FC1;
   filter: grayscale(0%);
-  -webkit-filter: grayscale(0%);
 }
 
 /* ===Clock=== */

@@ -138,30 +138,6 @@
                 "DJANGO",
                 "MYSQL"
             ]
-        },
-        {
-            "id": 7,
-            "title": "팀플",
-            "colorCode": "#ddd",
-            "period": "2025-02-00~ 2025-03-00",
-            "type": [
-                "Team Project",
-                "PC",
-                "Mobile"
-            ],
-            "description": "~~~",
-            "siteLink": "",
-            "pdfLink": "",
-            "githubLink": "",
-            "notionLink": "",
-            "imgPath": "",
-            "techStack": [
-                "REACT",
-                "SCSS",
-                "MYSQL",
-                "JAVA",
-                "SPRING"
-            ]
         }
     ]
 }

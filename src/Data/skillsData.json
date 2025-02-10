@@ -2,45 +2,45 @@
     "Language": [
         {
             "id": "1",
-            "name": "HTML",
-            "description": "시맨틱 태그를 활용하여 구조적인 마크업을 작성할 수 있습니다.",
-            "icon": "html_logo.png"
-        },
-        {
-            "id": "2",
-            "name": "CSS",
-            "description": "CSS를 활용하여 레이아웃을 구성하고 반응형 웹 디자인을 구현할 수 있습니다.",
-            "icon": "css_logo.png"
-        },
-        {
-            "id": "3",
             "name": "JavaScript",
             "description": "ES6+ 문법을 활용할 수 있으며, DOM 조작 및 이벤트 핸들링이 가능합니다.",
             "icon": "javascript_logo.png"
         },
         {
-            "id": "4",
+            "id": "2",
             "name": "TypeScript",
-            "description": "기본적인 TypeScript 문법을 이해하고 있으며, 타입 시스템을 활용하여 안정적인 코드를 작성할 수 있습니다.",
+            "description": "TypeScript 문법을 이해하고 있으며, 타입 시스템을 활용하여 안정적인 코드를 작성할 수 있습니다.",
             "icon": "typescript_logo.png"
         },
         {
-            "id": "5",
+            "id": "3",
+            "name": "Node.js",
+            "description": "Express 프레임워크를 활용하여 RESTful API를 개발할 수 있으며, 비동기 프로그래밍 및 데이터베이스 연동이 가능합니다.",
+            "icon": "node_logo.png"
+        },
+        {
+            "id": "4",
             "name": "Python",
             "description": "데이터 처리 및 간단한 웹 개발(Django)을 수행할 수 있습니다.",
             "icon": "python_logo.png"
         },
         {
-            "id": "6",
+            "id": "5",
             "name": "Java",
             "description": "객체지향 프로그래밍 개념을 이해하고 있으며, Spring을 활용한 웹 애플리케이션을 개발할 수 있습니다.",
             "icon": "java_logo.png"
         },
         {
+            "id": "6",
+            "name": "HTML",
+            "description": "시맨틱 태그를 활용하여 구조적인 마크업을 작성할 수 있습니다.",
+            "icon": "html_logo.png"
+        },
+        {
             "id": "7",
-            "name": "Node.js",
-            "description": "Express 프레임워크를 활용하여 RESTful API를 개발할 수 있으며, 비동기 프로그래밍 및 데이터베이스 연동이 가능합니다.",
-            "icon": "node_logo.png"
+            "name": "CSS",
+            "description": "CSS를 활용하여 레이아웃을 구성하고 반응형 웹 디자인을 구현할 수 있습니다.",
+            "icon": "css_logo.png"
         }
     ],
     "FrontEnd": [
@@ -91,22 +91,34 @@
         {
             "id": "4",
             "name": "Mysql",
-            "description": "기본적인 SQL 문법과 데이터베이스 설계를 할 수 있습니다.",
+            "description": "기본적인 표준 SQL 문법과 데이터베이스 설계를 할 수 있습니다.",
             "icon": "mysql_logo.png"
         }
     ],
     "ETC": [
         {
             "id": "1",
-            "name": "Docker",
-            "description": "컨테이너 개념을 이해하고 기본적인 이미지 빌드가 가능합니다.",
-            "icon": "docker_logo.png"
+            "name": "VIM",
+            "description": "VIM을 활용하여 효율적인 코드 편집이 가능합니다.",
+            "icon": "vim_logo.png"
         },
         {
             "id": "2",
             "name": "GitHub",
             "description": "Commit 관리 등 협업에 필요한 기능을 사용할 수 있습니다.",
-            "icon": "github_logo.png"
+            "icon": "github_white_logo.png"
+        },
+        {
+            "id": "3",
+            "name": "Docker",
+            "description": "컨테이너 개념을 이해하고 기본적인 이미지 빌드가 가능합니다.",
+            "icon": "docker_logo.png"
+        },
+        {
+            "id": "4",
+            "name": "Notion",
+            "description": "일정 및 작업을 체계적으로 관리할 수 있습니다.",
+            "icon": "notion_white_logo.png"
         }
     ]
 }

@@ -2,48 +2,57 @@
 .aboutMe-wrapper {
   position: relative;
   width: 100%;
-  height: 85vh;
-  background: #F5F5F5;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.aboutMe-wrapper .aboutMe-layout {
-  width: 65%;
-  height: 80%;
-  display: flex;
-  justify-content: space-between;
-  gap: 2rem;
-}
-.aboutMe-wrapper .aboutMe-layout .aboutMe-main-info, .aboutMe-wrapper .aboutMe-layout .aboutMe-sub-info {
-  background: #ffffff;
-  border-radius: 1rem;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  height: auto;
+  background: #f0f4f8;
   padding: 2rem;
-  color: #333;
-}
-.aboutMe-wrapper .aboutMe-layout .aboutMe-main-info {
-  flex: 1;
-}
-.aboutMe-wrapper .aboutMe-layout .aboutMe-sub-info {
-  flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  align-items: center;
+}
+.aboutMe-wrapper .aboutMe-layout {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.aboutMe-wrapper .aboutMe-layout .aboutMe-main-info {
+  background: #ffffff;
+  border-radius: 1rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+  color: #2d2d2d;
+  text-align: center;
+}
+.aboutMe-wrapper .aboutMe-layout .aboutMe-main-info h1 {
+  font-size: 2rem;
+  color: #6A0DAD;
+  margin-bottom: 1rem;
+}
+.aboutMe-wrapper .aboutMe-layout .aboutMe-main-info p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+.aboutMe-wrapper .aboutMe-layout .aboutMe-sub-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
 }
 .aboutMe-wrapper .aboutMe-layout .aboutMe-sub-info .sub-item {
   background: white;
   border-radius: 1rem;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
   padding: 1.5rem;
+  transition: transform 0.3s;
+}
+.aboutMe-wrapper .aboutMe-layout .aboutMe-sub-info .sub-item:hover {
+  transform: translateY(-5px);
 }
 .aboutMe-wrapper .aboutMe-layout .aboutMe-sub-info .sub-item h2 {
   font-size: 1.7rem;
   font-weight: bold;
-  color: #4F2FC1;
+  color: #6A0DAD;
   margin-bottom: 1rem;
-  letter-spacing: 0.05rem;
+  text-align: center;
 }
 .aboutMe-wrapper .aboutMe-layout .aboutMe-sub-info .sub-item ul {
   list-style: none;
@@ -57,7 +66,7 @@
 }
 .aboutMe-wrapper .aboutMe-layout .aboutMe-sub-info .sub-item ul li::before {
   content: "•";
-  color: #4F2FC1;
+  color: #6A0DAD;
   font-size: 1.2rem;
   position: absolute;
   left: 0;
