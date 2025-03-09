@@ -7,6 +7,9 @@ import Home from './components/Home';
 import AbouteMe from "./components/AbouteMe";
 import Portfolio from './components/Portfolio';
 import Skills from './components/Skills';
+import Contact from './components/Contact';
+
+import "./assets/styles/index.scss";
 
 const App = () => {
   return (
@@ -19,6 +22,7 @@ const App = () => {
           {/* <AbouteMe/> */}
           <Portfolio />
           <Skills/>
+          {/* <Contact/> */}
         </div>
     </div>
   );

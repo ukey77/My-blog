@@ -1,12 +1,13 @@
 @use 'variables' as *;
 
 $point-text-color: #321697;
-
+$background-color:#F5F5F5;
+// $background-color:#FFFBF2;
 .portfolio-wrapper {
     width: 100%;
     padding: 6rem 2rem 9rem;
-    background: #F5F5F5;
-    // height: $wrapper-height;
+    background: $background-color;
+    border-radius: 2rem 2rem 0 0;
 }
 
 .portfolio-layout{

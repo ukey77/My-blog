@@ -1,6 +1,5 @@
 import React , {useState, useEffect} from "react";
-import "../styles/Skills.scss"
-import skillData from "../Data/skillsData.json";
+import skillData from "../assets/Data/skillsData.json";
 
 const Skills = () => {
     const [list, setList] = useState("Language");

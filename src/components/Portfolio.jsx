@@ -1,8 +1,7 @@
 import React, { useEffect, useState, useRef } from "react";
-import '../styles/Portfolio.scss';
 
 // == json Data ==
-import projectData from "../Data/projectData.json";
+import projectData from "../assets/Data/projectData.json";
 
 // == recoil ==  :: State(값변경) , Value(값 읽기)
 import { useRecoilState, useRecoilValue } from "recoil";

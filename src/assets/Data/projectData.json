@@ -138,6 +138,33 @@
                 "DJANGO",
                 "MYSQL"
             ]
+        },
+        {
+            "id": 7,
+            "title": "안전신호등",
+            "colorCode": "#F8FDF9",
+            "period": "2025-02-13 ~ 2025-03-04",
+            "type": [
+                "Team Project",
+                "PC",
+                "Mobile"
+            ],
+            "description": "~~~~~",
+            "siteLink": "",
+            "pdfLink": "",
+            "githubLink": "",
+            "notionLink": "",
+            "imgPath": "portfolio/SafetyTrafficLights.jpg",
+            "techStack": [
+                "REACT",
+                "TYPESCRIPT",
+                "RECOIL",
+                "SASS",
+                "D3",
+                "NODE",
+                "EXPRESS",
+                "MYSQL"
+            ]
         }
     ]
 }

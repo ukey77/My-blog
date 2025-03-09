@@ -1,4 +1,3 @@
-import '../styles/Home.scss'
 import Clock from './Clock';
 import React, { useEffect,useState } from "react";
 

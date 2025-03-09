@@ -4,7 +4,8 @@ $header-height: 20vh;
 
 // ==========================
 $font-white: #fff;
-$font-green-light: #00ff99;
+$font-green-light: #01ea8d;
+
 $font-gray: #a2aab7;
 $sidebar-width: 15%;
 
@@ -12,7 +13,8 @@ $line-max-length: 25rem;
 $line-min-length: .1rem;
 $line-color: #ffffff4d;
 // ==========================
-$background-color: #2D295A;
+$background-color: #37197D;
+// $background-color: #2e146a;
 
 
 @mixin position-center(){
@@ -24,9 +26,10 @@ $background-color: #2D295A;
 .skills-wrapper {
   padding: 10vh 0 9vh 0;
   // background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
-  background-color: $background-color;
+  background: $background-color;
   color: $font-white;
-  // height: $wrapper-height;
+  min-height: $wrapper-height;
+
 
   .skills-layout-area{
     width: 76vw;

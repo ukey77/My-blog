@@ -1,5 +1,3 @@
-import "../styles/Navigation.scss";
-
 const Navigation = () => {
     const navTitle = ["HOME", "ABOUT ME", "PORTFOLIO", "SKILLS", "CONTACT"];
     return (
