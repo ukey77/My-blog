@@ -1,6 +1,9 @@
 import React from "react";
 import './App.css';
 
+// == scss ==
+import "./assets/styles/index.scss";
+
 // == pages ==
 import Navigation from "./components/Navigation";
 import Home from './components/Home';
@@ -9,7 +12,6 @@ import Portfolio from './components/Portfolio';
 import Skills from './components/Skills';
 import Contact from './components/Contact';
 
-import "./assets/styles/index.scss";
 
 const App = () => {
   return (
@@ -19,7 +21,7 @@ const App = () => {
         <Home />
       </div>
         <div className="all-contents-area">
-          {/* <AbouteMe/> */}
+          <AbouteMe />
           <Portfolio />
           <Skills/>
           {/* <Contact/> */}

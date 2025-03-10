@@ -11,7 +11,7 @@
             "period": "2024-07-19 ~ 2024-07-25",
             "description": "이차원 배열과 객체를 활용하여 행렬의 덧셈, 뺄셈, 곱셈 연산을 구현한 행렬 계산기 프로젝트입니다.",
             "siteLink": "http://kkms4001.iptime.org/~c21st05/Project/MatrixCalculator/",
-            "githubLink": "http://kkms4001.iptime.org/~c21st05/Project/MatrixCalculator/",
+            "githubLink": "https://github.com/ukey77/MatrixCalculator",
             "notionLink": "https://fanatical-music-91c.notion.site/Matrix-Calculator-23b233ab5ab849b4b6cf4d7f1d0e68ff",
             "pdfLink": "",
             "imgPath": "portfolio/MatrixCalculator.jpg",
