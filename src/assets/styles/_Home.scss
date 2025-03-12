@@ -24,11 +24,6 @@ $background-font-family: "Pretendard", sans-serif;
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 
-body {
-  font-family: $background-font-family;
-  font-weight: 400; /* 기본 굵기 */
-  color: #333;
-}
 
 * {
     margin: 0;
@@ -38,6 +33,12 @@ body {
     color: #222222;
     font-family: "Pretendard", sans-serif;
 }
+
+body {
+    font-family: $background-font-family;
+    font-weight: 400; /* 기본 굵기 */
+    color: #333;
+  }
 
 ul,
 ol,
@@ -50,8 +51,7 @@ a {
     display: inline-block;
 }
 
-/* start */
-
+/* =========== start =========== */
 .home-wrapper{
     position: relative;
     width: 100%;
@@ -64,7 +64,6 @@ a {
 .main-contents-area{
     position: relative;
     width: 100%;
-    // border: 1px solid red;
     height: $Contents-height;
 }
 
@@ -210,13 +209,10 @@ a {
 .explain-container {
     width: 100%;
     height: $Explain-height;
-    // background-color: #f4f4f4;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
-    // border: 1px solid red;
-
 }
 
 .explain-content .explain-txt {
@@ -330,7 +326,7 @@ a {
     }
   }
 
-// updatetxt 추가 (0208)
+// ===== updatetxt 추가 (0208) =====
 .update-area{
     position: absolute;
     left: 2rem;
@@ -339,6 +335,5 @@ a {
     .update-date{
         font-size: 1.6rem;
         color: #b4b4b4;
-        // text-shadow: .1rem .1rem .3rem #7d7777;
     }
 }

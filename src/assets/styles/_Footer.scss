@@ -1,0 +1,109 @@
+@use 'variables' as *;
+
+.footer-wrapper {
+  background: linear-gradient(135deg, #2c2c2c, #1f1f1f); // 어두운 톤으로 수정
+  padding: 40px 20px;
+  color: #ddd;
+  font-size: 1.4rem;
+  border-top: 1px solid #444; // 구분선을 더 어두운 회색으로 추가
+  height: $footer-height;
+  
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  /* 로고 */
+  .footer-brand {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #fff;
+    background: linear-gradient(90deg, #8017ca, #895eee);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  /* 링크 */
+  .footer-links {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      a {
+        color: #bbb;
+        font-size: 1.6rem;
+        font-weight: 500;
+        text-decoration: none;
+        transition: color 0.3s ease;
+
+        &:hover {
+          color: #fff;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  /* 소셜 아이콘 */
+  .footer-social {
+    display: flex;
+    gap: 20px;
+
+    a {
+      $size: 3.8rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: $size;
+      height: $size;
+      background-color: #646464c7;
+      border-radius: 50%;
+      font-size: 2rem !important;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background-color: #c0a2d4;
+        color: #fff;
+        transform: translateY(-5px);
+        box-shadow: 0 4px 12px rgba(55, 25, 125, 0.3);
+      }
+    }
+  }
+
+  /* 저작권 */
+  .footer-copyright {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #aaa;
+    text-align: center;
+  }
+}
+
+/* 반응형 처리 */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .footer-social {
+    gap: 10px;
+  }
+
+  .footer-brand {
+    font-size: 2rem;
+  }
+}

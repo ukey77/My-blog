@@ -13,8 +13,9 @@ $line-max-length: 25rem;
 $line-min-length: .1rem;
 $line-color: #ffffff4d;
 // ==========================
-$background-color: #37197D;
+// $background-color: #37197D;
 // $background-color: #2e146a;
+$background-color: #391886;
 
 
 @mixin position-center(){
@@ -23,12 +24,14 @@ $background-color: #37197D;
   top: 50%;
   transform: translate(-50%,-50%);
 }
+
 .skills-wrapper {
   padding: 10vh 0 9vh 0;
   // background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
   background: $background-color;
   color: $font-white;
   min-height: $wrapper-height;
+  border-bottom: $section-border-bottom;
 
 
   .skills-layout-area{

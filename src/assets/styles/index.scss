@@ -1,11 +1,16 @@
 @charset "UTF-8";
 
+// == main ==
 @use "Home";
+
+
+// == component ==
 @use "Navigation";
+@use "Footer";
 
 
+//  == page ==
+@use "AboutMe";
 @use "Portfolio";
 @use "Skills";
-
-@use "AboutMe";
-// @use "Contact";
+@use "Contact";
