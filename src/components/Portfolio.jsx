@@ -59,8 +59,8 @@ const Portfolio = () => {
                             </ul>
                         </article>
                         <article className="detail-info">
-                            <a href="#site" className="info-button go-site">GO SITE</a>
-                            <a href="#pdf" className="info-button pdf">PDF</a>
+                            <a href={data[sortIdx]["siteLink"]} target="_blank" className="info-button go-site">GO SITE</a>
+                            <a href={data[sortIdx]["pdfLink"]} target="_blank" className="info-button pdf">PDF</a>
                         </article>
                     </section>
                     <div style={areaStyle} className={`portfolio-img-area`}>
@@ -89,9 +89,7 @@ const Portfolio = () => {
             <section className="portfolio-layout">
                 <section className="portfolio-header">
                     <h2 className="section-title">PORTFOLIO <span className="portfolio-length">{portfolioLength.current}</span></h2>
-                    <article>
-                        <SortOrder />
-                    </article>
+                    <article><SortOrder /></article>
                 </section>
                 <section ref={portfolioContents} className="portfolio-contents">
                     {jsxData}
