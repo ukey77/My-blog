@@ -9,7 +9,7 @@ $section-border-bottom: 12px solid #d9d9d97a;
 // ==============================
 .about-wrapper {
     width: 100%;
-    height: 65vh;
+    min-height: 65vh;
     background-color: #fcfcfc;
     padding: 3rem 0;
     border-bottom: $section-border-bottom;
@@ -111,17 +111,22 @@ $section-border-bottom: 12px solid #d9d9d97a;
     text-align: center;
 }
 
+// =====================================
 
-// /* 반응형 처리 */
-// @media (max-width: 768px) {
-//     .certification-list {
-//         flex-direction: column;
-//         gap: 8px;
-//     }
+@media(max-width: 1200px){
+    $about-image-box-size: 25vw;
+    .about-image-box{
+        width: $about-image-box-size;
+        height: $about-image-box-size;
+    }
 
-//     .certification-list li {
-//         width: 100%; /* 모바일에서는 한 줄에 하나씩 */
-//         font-size: 1.4rem;
-//         padding: 0.7rem 1.2rem;
-//     }
-// }
+    .about-wrapper{
+        padding: 4rem 0 0;
+    }
+    .about-layout{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}

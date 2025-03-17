@@ -10,12 +10,12 @@ $Home-height: 100vh;
 $Explain-height: 17vh;
 $Contents-height: 70vh;
 $scroll-height: 13vh;
-
+$box-item-height: 26vh; 
 // == color ==
 $scroll-color: #535353;
 
 // == font ==
-$explain-font-size: 5rem;
+$explain-font-size: 6.8rem;
 $explain-font-family: 'Montserrat', sans-serif;
 $background-font-family: "Pretendard", sans-serif;
 // ===============================================
@@ -72,7 +72,7 @@ a {
     background: url("../images/gradient.png") no-repeat;
     background-size: 120%;
     width: 30%;
-    height: 75vh;
+    height: 160vh;
     -webkit-transform: translate(-50%);
     -moz-transform: translate(-50%);
     -ms-transform: translate(-50%);
@@ -107,12 +107,12 @@ a {
     display: flex;
 }
 
+
 .box-item {
     width: calc(100vw / 7);
-    height: calc(100vw / 8);
+    height: $box-item-height;
     margin: .05rem;
-    /*border: 1px solid red;
-    */border-radius: .4rem;
+    border-radius: .4rem;
     filter: grayscale(90%);
     transition: all 0.4s;
     -webkit-transition: all 0.4s;
@@ -196,7 +196,7 @@ a {
     top: 50%;
     transform: translate(-50%,-50%);
     width: calc(100vw / 8.5);
-    height: calc(100vw / 8.5);
+    height: $box-item-height;
     border-radius: 50%;
     overflow: hidden;
     -webkit-transform: translate(-50%,-50%);
@@ -335,5 +335,197 @@ a {
     .update-date{
         font-size: 1.6rem;
         color: #b4b4b4;
+    }
+}
+
+// =============================
+
+//  =================== 반응형 ===================
+
+    // .gradient-pattern {
+    //     width: 30%;
+    //     height: 160vh;
+    // }
+
+@media (max-width: 1700px) {
+    .explain-content .explain-txt, .sub-text {
+        font-size: 5.8rem;
+    }
+
+    .box-item {
+        width: calc(100vw / 6);
+    }
+
+    // 특정 박스 숨기기
+    .box5, .box14 {
+        display: none;
+    }
+}
+
+
+@media (max-width: 1400px) {
+    .explain-content .explain-txt, .sub-text {
+        font-size: 4rem;
+    }
+
+    .box-item {
+        width: calc(100vw / 4);
+    }
+
+    // 특정 박스 숨기기
+    .box2 , .box8 {
+        display: none;
+    }
+
+    .gradient-pattern {
+        width: 40%;
+        height: 120vh;
+    }
+
+    .explain-container{
+        // 배경
+        background: linear-gradient(135deg, #F4F4F4, #EAE6FF);
+        border-radius: 1rem;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        margin-bottom: 1.5rem;
+    }
+
+    .horizontal-line{
+        display: none;
+    }
+
+    .explain-sub{
+        width: 100%;
+    }
+
+
+    .explain-sub .sub-text{
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .explain-row2{
+        display: inline-block;
+    }
+}
+
+
+@media (max-width: 1000px) {
+    .box-item {
+        width: calc(100vw / 3);
+    }
+
+    // 특정 박스 숨기기
+    .box6 , .box11 {
+        display: none;
+    }
+}
+
+
+
+@media (max-width: 700px) {
+    .explain-content .explain-txt, .sub-text {
+        font-size: 3.7rem;
+    }
+
+    .box-item {
+        width: calc(100vw / 3);
+    }
+
+    // 특정 박스 숨기기
+    .box6 , .box11 {
+        display: none;
+    }
+
+    .gradient-pattern {
+        width: 50%;
+        height: 90vh;
+    }
+}
+
+
+
+@media (max-width: 600px) {
+
+    $Contents-height: 63vh;
+    $box-item-height: 23vh;
+    $explain-container-height: 23vh;
+
+    .main-contents-area{
+        height: $Contents-height;
+    }
+
+    .box-item {
+        height: $box-item-height;
+    }
+
+    .explain-container{
+        height: $explain-container-height;
+        margin-bottom: 1.4rem;
+    }
+
+    .box-item {
+        width: calc(100vw / 3);
+    }
+
+    .explain-row-2{
+        display: block;
+    }
+
+}
+
+@media (max-width: 500px) {
+    .explain-content .explain-txt, .sub-text {
+        font-size: 3.6rem;
+    }
+    .explain-row-2{
+        padding: 1.8rem 0;
+    }
+    .box-item {
+        width: calc(100vw / 3);
+    }
+    .box7, .box9{
+        display: none;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .explain-content .explain-txt, .sub-text {
+        font-size: 3rem;
+    }
+
+    $Contents-height: 62vh;
+    $box-item-height: 22vh;
+    $explain-container-height: 20vh;
+
+    .main-contents-area{
+        height: $Contents-height;
+    }
+
+    .box-item {
+        height: $box-item-height;
+    }
+
+    .explain-container{
+        height: $explain-container-height;
+        margin-bottom: 4.5rem;
+    }
+
+    .explain-row-2{
+        padding: 2rem 0;
+    }
+
+    .box-item {
+        width: calc(100vw / 2);
+    }
+    .box3, .box13{
+        display: none;
     }
 }

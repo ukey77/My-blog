@@ -15,6 +15,7 @@ import AboutMe from './components/AboutMe';
 import Portfolio from './components/Portfolio';
 import Skills from './components/Skills';
 import Contact from "./components/Contact";
+import { IoEllipseSharp } from "react-icons/io5";
 
 const App = () => {
   const aboutRef = useRef(null);
@@ -33,6 +34,8 @@ const App = () => {
         top: offsetPosition,
         behavior: 'smooth'
       });
+    }else{
+      console.error("Ref is null");
     }
   };
   
@@ -48,7 +51,7 @@ const App = () => {
         }}
       />
       <div className="home-content-area">
-        <Home />
+        <Home/>
       </div>
       <div className="all-contents-area">
         {/* == pages == */}

@@ -7,7 +7,7 @@ const Footer = () => {
   const iconSize = 25;
   const socialLinks = [
     { id: 1, icon: <FaGithub size={iconSize}/>, url: "https://github.com/your-username" },
-    { id: 2, icon: <FaLinkedin size={iconSize}/>, url: "https://linkedin.com/in/your-profile" },
+    // { id: 2, icon: <FaLinkedin size={iconSize}/>, url: "https://linkedin.com/in/your-profile" },
     { id: 3, icon: <FaEnvelope size={iconSize}/>, url: "mailto:yujin25683@gmail.com" }
   ];
 

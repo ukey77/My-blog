@@ -1,7 +1,5 @@
 import Clock from './Clock';
-import React, { useEffect,useState } from "react";
-
-// import {Routes, Route} from "react-router-dom";
+import React, { useEffect, useState } from "react";
 
 // == Home ==
 const Home = () => {
@@ -11,7 +9,7 @@ const Home = () => {
             <Explain/>
         </div>
     )
-}
+};
 
 // == Contents ==
 const Contents = () => {
@@ -53,7 +51,7 @@ const Explain = () => {
         <>
         <section className="explain-container">
             <article className="explain-content">
-                <p className="explain-txt jeneral-color">DEVELOPER <span className="explain-txt point-color">KIMYUJIN</span>'S</p>
+                <p className="explain-txt jeneral-color explain-row-1">DEVELOPER <span className="explain-txt point-color explain-row-2">KIMYUJIN</span>'S</p>
             </article>
             <div className="explain-sub">
                 <div className="horizontal-line"></div>
@@ -61,7 +59,7 @@ const Explain = () => {
             </div>
         </section>
         <article className="update-area">
-            <p className='update-date'>UPDATE 25.03.09</p>
+            <p className='update-date'>UPDATE 25.03.17</p>
         </article>
         <Scroll/>
         </>
