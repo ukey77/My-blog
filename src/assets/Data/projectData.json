@@ -78,7 +78,7 @@
                 "PC",
                 "Mobile"
             ],
-            "description": "재귀 알고리즘을 활용하여 하노이의 탑을 구현했으며, 원판의 이동 경로를 시각적으로 표시하여 직관적으로 확인할 수 있도록 제작했습니다",
+            "description": "재귀 알고리즘을 활용하여 하노이의 탑을 구현했으며, 원판의 이동 경로를 시각적으로 표시하여 직관적으로 확인할 수 있도록 제작했습니다.",
             "siteLink": "http://kkms4001.iptime.org/~c21st05/Project/HanoiTower/",
             "pdfLink": "pdf/HanoiTower.pdf",
             "githubLink": "https://github.com/ukey77/TowerOfHanoi",

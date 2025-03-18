@@ -51,7 +51,7 @@ const Explain = () => {
         <>
         <section className="explain-container">
             <article className="explain-content">
-                <p className="explain-txt jeneral-color explain-row-1">DEVELOPER <span className="explain-txt point-color explain-row-2">KIMYUJIN</span>'S</p>
+                <p className="explain-txt jeneral-color explain-row-1">DEVELOPER <p className="explain-txt point-color explain-row-2">KIMYUJIN <span className='explain-txt jeneral-color'>'S</span></p></p>
             </article>
             <div className="explain-sub">
                 <div className="horizontal-line"></div>

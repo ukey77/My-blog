@@ -16,7 +16,7 @@ const Footer = () => {
       <div className="footer-content">
         {/* 로고 및 이름 */}
         <div className="footer-brand">
-          <span className="logo">YUJIN.dev</span>
+          <span className="footer_logo">YUJIN.dev</span>
         </div>
 
         {/* 소셜 아이콘 */}
