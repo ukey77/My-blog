@@ -9,13 +9,29 @@ $section-border-bottom: 12px solid #d9d9d97a;
 // ==============================
 .about-wrapper {
     width: 100%;
-    min-height: 65vh;
+    // min-height: 65vh;
     background-color: #fcfcfc;
     padding: 3rem 0;
     border-bottom: $section-border-bottom;
-    border-top: 5px solid #d9d9d97a;
+    border-top: 10px solid #d9d9d97a;
     border-radius: 10px 10px 0 0;
 }
+
+.about-main-title {
+    font-size: 3.4rem;
+    font-weight: 700;
+    padding-bottom: 2.5rem;
+    margin: 0 auto;
+    text-align: center;
+    color: #37197D;
+    background-image: linear-gradient(90deg, #37197D, #6A3FB5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: -0.3px;
+    line-height: 1.2;
+}
+
+
 
 .about-layout{
     width: $layout-width;

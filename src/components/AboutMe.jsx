@@ -5,7 +5,7 @@ const Contact = () => {
     return (
         <section className="about-wrapper">
             {/* == about == */}
-            {/* <h2 className="about-main-title">ABOUT YUJIN</h2> */}
+            <h2 className="about-main-title">ABOUT YUJIN</h2>
             <section className="about-layout">
                 <article className="about-image-box">
                     <div className="about-circle-shape"></div>
