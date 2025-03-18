@@ -28,12 +28,11 @@ const Navigation = ({ scrollToSection, refs }) => {
 
     return (
         <header className="navigation-area">
-            <h1 
+            <div 
                 className="logo" 
                 onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
             >
-                YUJIN'S BLOG
-            </h1>
+            </div>
 
             {/* 햄버거 버튼 */}
             <button 
