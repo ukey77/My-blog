@@ -2,7 +2,7 @@
 
 .contact-wrapper {
   width: 100%;
-  height: $contact-height;
+  min-height: $contact-height;
   display: flex;
   flex-direction: column;
   justify-content: center;
