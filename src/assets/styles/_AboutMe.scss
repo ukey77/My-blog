@@ -1,3 +1,5 @@
+// 사용시
+@use 'variables' as *;
 
 $layout-width: 76vw;
 $about-image-box-size: 21vw;
@@ -6,12 +8,13 @@ $title-font-size: 2.5rem;
 $intro-font-size: calc($title-font-size + .1rem);
 $section-border-bottom: 12px solid #d9d9d97a;
 
+
 // ==============================
 .about-wrapper {
     width: 100%;
     // min-height: 65vh;
     background-color: #fcfcfc;
-    padding: 3rem 0;
+    padding: $about-pc-wrapper-padding;
     border-bottom: $section-border-bottom;
     border-top: 10px solid #d9d9d97a;
     border-radius: 10px 10px 0 0;
@@ -130,15 +133,16 @@ $section-border-bottom: 12px solid #d9d9d97a;
 // =====================================
 
 @media(max-width: 1200px){
+    .about-wrapper{
+        padding: $about-wrapper-padding;
+    }
+
     $about-image-box-size: 25vw;
     .about-image-box{
         width: $about-image-box-size;
         height: $about-image-box-size;
     }
 
-    .about-wrapper{
-        padding: 4rem 0 0;
-    }
     .about-layout{
         width: 100%;
         flex-direction: column;

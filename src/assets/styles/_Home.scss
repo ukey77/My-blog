@@ -35,6 +35,8 @@ $background-font-family: "Pretendard", sans-serif;
 }
 
 body {
+    width: 100vw;
+    overflow-x: hidden;
     font-family: $background-font-family;
     font-weight: 400; /* 기본 굵기 */
     color: #333;

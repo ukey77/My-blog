@@ -2,7 +2,7 @@
 
 .contact-wrapper {
   width: 100%;
-  min-height: $contact-height;
+  height: $contact-height;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -116,6 +116,8 @@
 @media (max-width: 768px) {
   .contact-wrapper {
     gap: 20px;
+    height: auto;
+    padding: $contact-wrapper-padding;
   }
 
   .contact-header {

@@ -1,8 +1,7 @@
 @use 'variables' as *;
 
-$header-height: 20vh;
-
 // ==========================
+$header-height: 20vh;
 $font-white: #fff;
 $font-green-light: #01ea8d;
 
@@ -12,7 +11,6 @@ $sidebar-width: 15%;
 $line-max-length: 25rem;
 $line-min-length: .1rem;
 $line-color: #ffffff4d;
-// ==========================
 $background-color: #391886;
 
 @mixin position-center(){
@@ -21,12 +19,13 @@ $background-color: #391886;
   transform: translate(-50%, -50%);
 }
 
+// ==========================
+
 .skills-wrapper {
-  padding: 10vh 0 9vh 0;
+  padding: $skills-pc-wrapper-padding;
   background: $background-color;
   color: $font-white;
   min-height: $wrapper-height;
-  border-bottom: $section-border-bottom;
 }
 
 .skills-layout-area {
@@ -120,6 +119,7 @@ $background-color: #391886;
 }
 
 .skills-list {
+  width: 100%;
   color: $font-white;
 }
 
@@ -179,12 +179,19 @@ $background-color: #391886;
 // =====================================
 @media(max-width: 1300px){
   .skills-wrapper {
-    padding: 5rem 0 4rem;
+    padding: $skills-wrapper-padding;
+    min-height: auto;
+    height: auto;
   }
   .skills-layout-area{
     width: 90%;
     margin: 0 auto; 
   }
+
+  .skills-list .list-item {
+    width: 100%;
+  }
+
   .skills-header h2{
     display: inline-block;
   }

@@ -158,12 +158,11 @@
             "techStack": [
                 "REACT",
                 "TYPESCRIPT",
-                "RECOIL",
                 "SASS",
-                "D3",
-                "NODE",
+                "NODE.JS",
                 "EXPRESS",
-                "MYSQL"
+                "MYSQL",
+                "DOCKER"
             ]
         }
     ]

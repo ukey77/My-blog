@@ -59,7 +59,7 @@ const Explain = () => {
             </div>
         </section>
         <article className="update-area">
-            <p className='update-date'>UPDATE 25.03.18</p>
+            <p className='update-date'>UPDATE 25.03.20</p>
         </article>
         <Scroll/>
         </>

@@ -1,5 +1,5 @@
 // 사용시
-// @use 'varialbes' as *
+// @use 'varialbes' as *;
 
 $point-color: #4F2FC1;
 $section-border-bottom: 12px solid #e6e6e6;
@@ -11,3 +11,16 @@ $footer-height: 30.5vh;
 
 $wrapper-height: calc(100vh - $nav-height);
 $contact-height: calc($wrapper-height - $footer-height);
+
+// == PC 패딩 ==
+$common-pc-padding-top: 5rem;
+$about-pc-wrapper-padding: $common-pc-padding-top 0;
+$portfolio-pc-wrapper-padding: $common-pc-padding-top 2rem 9rem;
+$skills-pc-wrapper-padding: 10vh 0 9vh 0;
+
+// == 모바일 패딩 ==
+$common-padding-top: 5rem;
+$about-wrapper-padding: $common-padding-top 0 0;
+$portfolio-wrapper-padding: $common-padding-top 0;
+$skills-wrapper-padding: calc($common-padding-top + 1.5rem) 0;
+$contact-wrapper-padding: calc($common-padding-top + 2rem) 0 calc($common-padding-top + 1rem);

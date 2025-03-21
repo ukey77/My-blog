@@ -5,7 +5,7 @@ $background-color:#F5F5F5;
 // $background-color:#FFFBF2;
 .portfolio-wrapper {
     width: 100%;
-    padding: 6rem 2rem 9rem;
+    padding: $portfolio-pc-wrapper-padding;
     background: $background-color;
     border-bottom: $section-border-bottom;
 }
@@ -16,7 +16,7 @@ $background-color:#F5F5F5;
 }
 
 .portfolio-header {
-    padding: 1rem 11.5rem;
+    padding: 1rem 11.5rem 3rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -46,6 +46,7 @@ $background-color:#F5F5F5;
 .portfolio-item {
     margin: 0 auto;
     width: 100%;
+    min-height: 33rem;
     height: 33rem;
     border-top: 1.5px solid #DFDFDF;
     display: flex;
@@ -123,6 +124,7 @@ $background-color:#F5F5F5;
 .tech-stack {
     display: flex;
     gap: 0.5rem;
+    flex-wrap: wrap;
 }
 
 .tech-item {
@@ -139,7 +141,6 @@ $background-color:#F5F5F5;
 
 .detail-info {
     height: 20%;
-    /* border: 1px solid red; */
     display: flex;
     gap: 1rem;
     padding: 1rem 0;
@@ -306,13 +307,13 @@ $top-size: 1.5rem;
         width: 70%;
     }
 }
-@media(max-width: 1060px){
+@media(max-width: 1140px){
     .portfolio-item{
         display: block;
     }
     .portfolio-img-area{
-    display: none;
-}
+        display: none;
+    }
     .portfolio-description{
         width: 100%;
     }
@@ -327,30 +328,48 @@ $top-size: 1.5rem;
     }
 }
 
-@media(max-width: 520px){
+@media(max-width: 720px){
     .portfolio-wrapper {
         width: 100%;
-        padding: 2rem 0;
+        padding: $portfolio-wrapper-padding;
     }
     .portfolio-layout{
         width: 100vw;
         margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
+    .section-title {
+        $size: 1.3rem;
+        margin-top: -$size;
+        margin-bottom: $size;
+    }
+
     .portfolio-contents {
-        width: 95%;
+        margin: 0 auto;
+        // margin-left: -0.28rem;
+        width: 98%;
+        border-radius: 1rem;
     }
     .portfolio-item{
+        width: 95%;
         height: inherit;
     }
+    .portfolio-item:first-child{
+        border-radius: 1rem 1rem 0 0;
+    }
+    .portfolio-item:last-child{
+        border-radius: 0 0 1rem 1rem;
+    }
+
     .portfolio-header{
         width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-    }
-    .tech-stack{
-        flex-wrap: wrap;
     }
     .section-title{
         text-align: center;
