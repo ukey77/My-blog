@@ -14,12 +14,13 @@ const Contact = () => {
                 <article className="about-content-box">
                     <h2 className="about-title">INTRODUCE</h2>
                     <div className="about-text-box">
-                        <p>
-                        안녕하십니까! 매일 새로운 에러와 씨름하며 성장하는 신입 개발자 <strong>김유진</strong>입니다.<br/>
-                        코로나 시기에 <strong>적극적으로 기회</strong>를 잡아 PM 직무를 경험하게 되었고, <strong>진정으로 원했던</strong> 개발의 길로 뛰어들게 됐습니다.<br/>
-                        아직 배울 게 산더미지만, <strong>5년, 10년 후</strong>에는 어떤 개발자가 될지 그림을 그리며 한 걸음씩 나아가고 있습니다.<br/>
-                        제알 자신 있는 건 남들의 속도에 휘둘리지 않고, <strong>제 페이스</strong>를 지키면서 <strong>꾸준히 성장</strong>할 수 있다는 점입니다!<br/>
-                        </p>
+                    <p>
+                        안녕하십니까! 매일 새로운 에러에도 <strong>문제해결력과 집요함</strong>을 바탕으로 성장하는 신입 백엔드 개발자 <strong>김유진</strong>입니다.<br/>
+                        <strong>기획 및 PM 직무를 경험</strong>하며 실무 프로세스를 설계하고, <strong>개발자와의 긴밀한 협업</strong>을 통해 시스템이 실제로 구현되는 과정을 직접 경험했습니다.<br/>
+                        이 과정을 통해 <strong>백엔드의 구조와 역할에 대한 이해</strong>를 넓히고, 실무에 필요한 기획력과 협업 역량을 함께 키워왔습니다.<br/>
+                        <strong>5년 후엔 실력과 책임감을 갖춘 개발자</strong>, <strong>10년 후엔 문제 해결 중심의 리더 개발자</strong>를 목표로 꾸준히 나아가고 있습니다.<br/>
+                        제 페이스를 지키며 <strong>지속적으로 성장할 수 있는 끈기와 실행력</strong>이 저의 가장 큰 강점입니다.
+                    </p>
                     </div>
                     <h2 className="about-certification-title">CERTIFICATION</h2>
                     <div className="about-certification-box">
