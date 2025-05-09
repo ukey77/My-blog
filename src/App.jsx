@@ -26,7 +26,7 @@ const App = () => {
   // 스크롤 이동 함수
   const scrollToSection = (ref) => {
     if (ref.current) {
-      const headerOffset = 75; // 네비게이션 바 높이 수동조정정
+      const headerOffset = 74.5; // 네비게이션 바 높이 수동조정정
       const elementPosition = ref.current.getBoundingClientRect().top + window.pageYOffset;
       const offsetPosition = elementPosition - headerOffset;
   

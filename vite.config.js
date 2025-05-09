@@ -7,3 +7,9 @@ export default defineConfig({
     port: 3000,
   },
 });
+
+// 수정_0509_개인서버에 올리기위해 
+// export default defineConfig({
+//   base: '/YujinsBlog/',
+//   plugins: [react()]
+// })

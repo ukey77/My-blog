@@ -1,0 +1,20 @@
+[
+    {
+      "id": 1,
+      "method": "TEL",
+      "action": "tel:010-5620-8919",
+      "img": "contact/phone-icon.png"
+    },
+    {
+      "id": 2,
+      "method": "KAKAO",
+      "action": "https://open.kakao.com/o/sXZSHZZg",
+      "img": "contact/kakao-icon.png"
+    },
+    {
+      "id": 3,
+      "method": "E-MAIL",
+      "action": "mailto:yujin25683@gmail.com",
+      "img": "contact/email-icon.png"
+    }
+  ]

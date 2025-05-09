@@ -1,54 +1,45 @@
-import React from 'react';
+import React, { useEffect, useState } from "react";
+
+
+// == json Data ==
+import contactData from "../assets/Data/contactData.json";
 
 const Contact = () => {
-  const contactInfo = [
-    {
-      id: 1,
-      method: "TEL",
-      action: "tel:010-5620-8919",
-      img: "/images/contact/phone-icon.png"
-    },
-    {
-      id: 2,
-      method: "KAKAO",
-      action: "https://open.kakao.com/o/sXZSHZZg",
-      img: "/images/contact/kakao-icon.png"
-    },
-    {
-      id: 3,
-      method: "E-MAIL",
-      action: "mailto:yujin25683@gmail.com",
-      img: "/images/contact/email-icon.png"
-    }
+    const [jsxData, setJsxData] = useState([]); // jsxData
+    useEffect(()=>{
+      const contactInfo = contactData;
 
-  ];
+      const jsxTemplate = contactInfo.map((contact) => {
+        const style = {backgroundImage: `url(images/${contact["img"]})`};
+        return(
+              <a 
+                key={contact["id"]} 
+                href={contact["action"]} 
+                target={contact["method"] === "KAKAO" ? "_blank" : "_self"} 
+                rel="noopener noreferrer" 
+                className="contact-card">
 
+                <div style={style} className="contact-icon"></div>
+                <p className="context-txt-box">
+                <h3>{contact["method"]}</h3>
+                {contact["method"] === "KAKAO" ? (
+                  <span className="kakao-link-txt">바로가기 →</span>
+                ) : (
+                  <p>{contact.action.replace(/^(mailto:|tel:)/, '')}</p>
+                )}
+                </p>
+                
+              </a>
+            )
+          });
+        setJsxData(jsxTemplate)
+    },[])
   return (
     <section className="contact-wrapper">
       {/* Contact me 헤더 추가 */}
       <h2 className="contact-header">Contact Me</h2>
-      
       <div className="contact-card-container">
-        {contactInfo.map((contact) => (
-          <a 
-            key={contact["id"]} 
-            href={contact["action"]} 
-            target={contact["method"] === "KAKAO" ? "_blank" : "_self"} 
-            rel="noopener noreferrer" 
-            className="contact-card">
-
-            <img src={contact["img"]} alt={contact["method"]} className="contact-icon" />
-            <p className="context-txt-box">
-            <h3>{contact["method"]}</h3>
-            {contact["method"] === "KAKAO" ? (
-              <span className="kakao-link-txt">바로가기 →</span>
-            ) : (
-              <p>{contact.action.replace(/^(mailto:|tel:)/, '')}</p>
-            )}
-            </p>
-            
-          </a>
-        ))}
+        {jsxData}
       </div>
     </section>
   );

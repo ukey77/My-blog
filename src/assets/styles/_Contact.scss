@@ -67,14 +67,16 @@
 
 .contact-icon {
   $size: 7rem;
+  margin: 0 auto;
   width: $size;
   height: $size;
-  padding: 0.5rem;
-  object-fit: cover;
   border-radius: 50%;
   margin-bottom: 1.6rem;
   border: 3px solid #37197D;
   transition: all 0.3s ease;
+  background-repeat: no-repeat;
+  background-size: 85%;
+  background-position: 50% 50%;
 
   .contact-card:hover & {
     transform: rotate(10deg);
