@@ -10,9 +10,9 @@
             ],
             "period": "2024-07-19 ~ 2024-07-25",
             "description": "이차원 배열과 객체를 활용하여 행렬의 덧셈, 뺄셈, 곱셈 연산을 구현한 행렬 계산기 프로젝트입니다.",
-            "siteLink": "http://kkms4001.iptime.org/~c21st05/Project/MatrixCalculator/",
+            "siteLink": "http://devuk.kr/MatrixCalculator/",
             "githubLink": "https://github.com/ukey77/MatrixCalculator",
-            "notionLink": "https://fanatical-music-91c.notion.site/Matrix-Calculator-23b233ab5ab849b4b6cf4d7f1d0e68ff",
+            "notionLink": "https://ukey77.notion.site/Matrix-Calculator-247efa77dcdf81189316f65a0ca2bec6",
             "pdfLink": "pdf/MatrixCalculator.pdf",
             "imgPath": "portfolio/MatrixCalculator.jpg",
             "techStack": [
@@ -32,10 +32,10 @@
                 "PC"
             ],
             "description": "Class 문법으로 객체 복사를 구현하고, 일차, 이차, 삼차 및 원 방정식을 활용해 그래프를 그릴 수 있도록 구현했습니다.",
-            "siteLink": "http://kkms4001.iptime.org/~c21st05/Project/Calculator/",
+            "siteLink": "http://devuk.kr/Calculator/",
             "pdfLink": "pdf/Calculator.pdf",
             "githubLink": "https://github.com/ukey77/Calculator",
-            "notionLink": "https://fanatical-music-91c.notion.site/Caculator-Graph-193017ff1290808ba071f1a1f260aa21",
+            "notionLink": "https://ukey77.notion.site/Caculator-Graph-247efa77dcdf81648f1fcab8a055b83d",
             "imgPath": "portfolio/GraphingCalculator.jpg",
             "techStack": [
                 "HTML5",
@@ -56,7 +56,7 @@
             "siteLink": "http://kkms4001.iptime.org:45120/",
             "pdfLink": "pdf/Cinema_Kiosk.pdf",
             "githubLink": "https://github.com/TeamGaston/cinemaKiosk",
-            "notionLink": "https://fanatical-music-91c.notion.site/Cinema-Kiosk-193017ff129080e78e42ddc4f9d9dfdc",
+            "notionLink": "https://ukey77.notion.site/Cinema-Kiosk-247efa77dcdf81519107c27b8664b049",
             "imgPath": "portfolio/CinemaKiosk.jpg",
             "techStack": [
                 "HTML5",
@@ -79,10 +79,10 @@
                 "Mobile"
             ],
             "description": "재귀 알고리즘을 활용하여 하노이의 탑을 구현했으며, 원판의 이동 경로를 시각적으로 표시하여 직관적으로 확인할 수 있도록 제작했습니다.",
-            "siteLink": "http://kkms4001.iptime.org/~c21st05/Project/HanoiTower/",
+            "siteLink": "http://devuk.kr/HanoiTower/",
             "pdfLink": "pdf/HanoiTower.pdf",
             "githubLink": "https://github.com/ukey77/TowerOfHanoi",
-            "notionLink": "https://fanatical-music-91c.notion.site/Hanoi-Tower-193017ff129080378831fd42e4b8af7d",
+            "notionLink": "https://ukey77.notion.site/Hanoi-Tower-247efa77dcdf812191c6fc1669ac21c0",
             "imgPath": "portfolio/TowerOfHanoi.jpg",
             "techStack": [
                 "HTML5",
@@ -101,10 +101,10 @@
                 "Mobile"
             ],
             "description": "SQL을 활용해 뮤직플레이어를 제작하고, 좋아요 기능을 추가하여 좋아요 리스트를 별도로 확인할 수 있도록 구현했습니다.",
-            "siteLink": "http://kkms4001.iptime.org/~c21st05/Project/MusicPlayer/Front/",
+            "siteLink": "http://devuk.kr/MusicPlayer/Front/",
             "pdfLink": "pdf/MusicPlayer.pdf",
             "githubLink": "https://github.com/ukey77/MusicPlayer",
-            "notionLink": "https://fanatical-music-91c.notion.site/Music-Player-193017ff12908017ae27d609c1c259ad",
+            "notionLink": "https://ukey77.notion.site/Music-Player-247efa77dcdf81d49446d5196ace3c33",
             "imgPath": "portfolio/MusicPlayer.jpg",
             "techStack": [
                 "HTML5",
@@ -129,7 +129,7 @@
             "siteLink": "http://kkms4001.iptime.org:45124/",
             "pdfLink": "pdf/강원도-락도락.pdf",
             "githubLink": "https://github.com/ukey77/TeamDyno-DoRock",
-            "notionLink": "https://fanatical-music-91c.notion.site/193017ff12908096bf6cef43355e4680",
+            "notionLink": "https://ukey77.notion.site/247efa77dcdf81e79c44cffd417c4fe5",
             "imgPath": "portfolio/DoRock.jpg",
             "techStack": [
                 "REACT",
@@ -153,7 +153,7 @@
             "siteLink": "http://kkms4001.iptime.org:21052/",
             "pdfLink": "pdf/SafetyTrafficLights.pdf",
             "githubLink": "https://github.com/TeamForBoss/DashFlow",
-            "notionLink": "https://fanatical-music-91c.notion.site/1ad017ff1290805c9677ca4f67f64d8e",
+            "notionLink": "https://ukey77.notion.site/247efa77dcdf8101ad9ad3bae7be94b0",
             "imgPath": "portfolio/SafetyTrafficLights.jpg",
             "techStack": [
                 "REACT",

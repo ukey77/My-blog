@@ -59,14 +59,19 @@ const Portfolio = () => {
                             </ul>
                         </article>
                         <article className="detail-info">
-                            <a href={data[sortIdx]["siteLink"]} target="_blank" className="info-button go-site">GO SITE</a>
-                            <a href={data[sortIdx]["pdfLink"]} target="_blank" className="info-button pdf">PDF</a>
+                            {/* -- 240807 수정 -- */}
+                            {/* Site -> Notion 링크 수정*/}
+                            <a href={data[sortIdx]["pdfLink"]} target="_blank" className="info-button pdf">VIEW PDF</a>
+                            <a href={data[sortIdx]["notionLink"]} target="_blank" className="info-button go-site">My Review</a>
                         </article>
                     </section>
                     <div style={areaStyle} className={`portfolio-img-area`}>
                         <div style={style} className={`portfolio-img`}></div>
 
-                        <div className='portfolio-img-hover' onClick={()=>{window.open(data[sortIdx]["siteLink"], "_blank");}}>
+                            {/* -- 240807 수정 -- */}
+                            {/* 이미지 클릭 시 pdf로 이동하도록 수정 */}
+                        {/* <div className='portfolio-img-hover' onClick={()=>{window.open(data[sortIdx]["siteLink"], "_blank");}}> */}
+                        <div className='portfolio-img-hover' onClick={()=>{window.open(data[sortIdx]["pdfLink"], "_blank");}}>
                             {/* ==logo== */}
                             <div className="notion-logo sub-logo" onClick={(e)=>{
                                 e.stopPropagation();

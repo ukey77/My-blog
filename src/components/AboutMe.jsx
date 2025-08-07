@@ -24,7 +24,7 @@ const Contact = () => {
                     <h2 className="about-certification-title">CERTIFICATION</h2>
                     <div className="about-certification-box">
                         <ul className="certification-list">
-                            <li>정보처리기사 (필기합격)</li>
+                            <li>정보처리기사(실기결과대기)</li>
                             <li>웹디자인개발기능사</li>
                             <li>컴퓨터활용능력 1급</li>
                         </ul>
