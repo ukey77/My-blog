@@ -8,8 +8,8 @@ import react from '@vitejs/plugin-react';
 //   },
 // });
 
-// 수정_0509_개인서버에 올리기위해 
+// 수정 0807 _ vercel배포
 export default defineConfig({
-  base: '/YujinsBlog/',
+  // base: '/YujinsBlog/',
   plugins: [react()]
 });
